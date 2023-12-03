@@ -28,10 +28,15 @@ const NavBar = styled.nav`
   display: flex;
   justify-content: space-around;
   align-items: center;
-  margin-top: 0%;
   margin-left: 65px;
   margin-right: 65px;
   border-radius: 20px;
+`;
+
+const StyledLink = styled(Link)`
+  text-decoration: none;
+  color: #000000;
+  margin: 0 10px;
 `;
 
 const StyledImage = styled.img`
@@ -74,9 +79,10 @@ const Form = () => {
     <div>
       <PageContainer>
       <NavBar>
-        <Link to="/">Home</Link>
-        <Link to="/form">Become a tutor</Link>
-        <Link to="/signIn">Sign In</Link>
+        <StyledLink to="/">Home</StyledLink>
+        <StyledLink to="/Tutor">Find Tutor</StyledLink>
+        <StyledLink to="/signIn">Sign In</StyledLink>
+        <StyledLink to="/form">Become a tutor</StyledLink>
       </NavBar>
 
       <FormContainer>

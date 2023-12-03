@@ -4,17 +4,21 @@ import { Link } from 'react-router-dom';
 
 const NavBar = styled.nav`
   background-color: #ffff;
-  color: #f9f8f4 ;
+  color: #f9f8f4;
   padding: 10px;
   display: flex;
   justify-content: space-around;
   align-items: center;
-  margin-top: 0%;
   margin-left: 65px;
   margin-right: 65px;
   border-radius: 20px;
 `;
 
+const StyledLink = styled(Link)`
+  text-decoration: none;
+  color: #000000;
+  margin: 0 10px;
+`;
 const Form = styled.form`
  display: flex;
  flex-direction: column;
@@ -68,12 +72,12 @@ const SignIn = () => {
  return (
   <div>
 <PageContainer>
-      <NavBar>
-        <Link to="/">Home</Link>
-        <Link to="/form">Become a tutor</Link>
-        <Link to="/signIn">Sign In</Link>
+<NavBar>
+        <StyledLink to="/">Home</StyledLink>
+        <StyledLink to="/Tutor">Find Tutor</StyledLink>
+        <StyledLink to="/signIn">Sign In</StyledLink>
+        <StyledLink to="/form">Become a tutor</StyledLink>
       </NavBar>
-
     <Form>
       <h3>Sign In</h3>
       <Input type="email" placeholder="Email" />
