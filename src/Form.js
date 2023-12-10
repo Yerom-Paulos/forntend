@@ -1,123 +1,107 @@
 import React from 'react';
-import styled from 'styled-components';
 import { Link } from 'react-router-dom';
-
-const StyledForm = styled.form`
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 10px;
-  justify-content: center;
-  height: 100vh;
-  margin-right: 15%;
-  margin-left: 15%;
-  margin-bottom: 5%;
-`;
-
-const StyledInput = styled.input`
-  padding: 10px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  width: 100%;
-`;
-
-const NavBar = styled.nav`
-  background-color: #ffff;
-  color: #f9f8f4;
-  padding: 10px;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  margin-left: 65px;
-  margin-right: 65px;
-  border-radius: 20px;
-`;
-
-const StyledLink = styled(Link)`
-  text-decoration: none;
-  color: #000000;
-  margin: 0 10px;
-`;
-
-const StyledImage = styled.img`
-  width: 50%;
-  height: auto;
-  border-radius: 30px;
-  margin-top: 50px;
-  margin-bottom: 50px;
-`;
-
-const StyledButton = styled.button`
-  padding: 10px 20px;
-  background-color: #fa9e0c;
-  color: white;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-  font-size: 16px;
-  text-align: center;
-  width: 113%;
-
-  &:hover {
-    background-color: #0056b3;
-  }
-`;
-
-const FormContainer = styled.div`
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-  gap: 20px;
-`;
-
-const PageContainer = styled.div`
-  background-color: #f9f8f4;
-`;
+import "./Form.css";
+import "./global.css";
 
 const Form = () => {
   return (
-    <div>
-      <PageContainer>
-      <NavBar>
-        <StyledLink to="/">Home</StyledLink>
-        <StyledLink to="/Tutor">Find Tutor</StyledLink>
-        <StyledLink to="/signIn">Sign In</StyledLink>
-        <StyledLink to="/form">Become a tutor</StyledLink>
-      </NavBar>
-
-      <FormContainer>
-        <StyledForm>
-          <h3>Become a tutor</h3>
-          <StyledInput type="text" name="fullName" placeholder="Full Name" />
-          <StyledInput type="text" name="profession" placeholder="Profession" />
-          <StyledInput
-            type="text"
-            name="higherEducation"
-            placeholder="Higher Education"
-          />
-          <StyledInput type="text" name="location" placeholder="Location" />
-          <StyledInput type="text" name="availability" placeholder="Availability" />
-          <StyledInput
-            type="text"
-            name="teachingMethod"
-            placeholder="Teaching Method"
-          />
-          <StyledInput type="text" name="courses" placeholder="Courses" />
-          <StyledInput
-            type="text"
-            name="ratePerHour"
-            placeholder="Rate per hour (ETB)"
-          />
-          <StyledButton type="submit">Register</StyledButton>
-        </StyledForm>
-
-        <StyledImage
-          src="https://communitynoiselab.org/wp-content/uploads/2022/08/three-map.png"
-          alt="Image"
+    <><div className="navigation-bar">
+    <div className="left">
+      <div className="tutto-ricco-pink-avatar-parent">
+        <img
+          className="tutto-ricco-pink-avatar"
+          alt=""
+          src="/tutto-ricco-pink-avatar@2x.png"
         />
-      </FormContainer>
-      </PageContainer>
+        <b className="label">
+          <span>Peer</span>
+          <span className="connect">Connect</span>
+        </b>
+      </div>
+      <Link to="/Tutor" className="label1">Tutors</Link>
+      <Link to="/pricing" className="label1">Pricing</Link>
+      <Link to="/resources" className="label1">Resources</Link>
     </div>
+    <div className="right">
+      <Link to="/signin" className="label1">Sign in</Link>
+      <div className="button">
+      <Link to="/form" className="button">
+            <img className="icon-left" alt="" src="/icon-left.svg" />
+            <div className="action">Become a tutor</div>
+            <img className="icon-left" alt="" src="/icon-right.svg" />
+          </Link>
+      </div>
+    </div>
+  </div>
+  <div className="sign-in-form-black">
+        <div className="column">
+          <div className="navbar">
+            <div className="tutto-ricco-pink-avatar-parent">
+              <img
+                className="tutto-ricco-pink-avatar"
+                alt=""
+                src="/tutto-ricco-pink-avatar@2x.png" />
+              <b className="label">
+                <span>Peer</span>
+                <span className="connect">connect</span>
+              </b>
+            </div>
+          </div>
+          <div className="form">
+            <div className="title">
+              <div className="log-in-to">Become a tutor</div>
+            </div>
+            <div className="txtemailactive">
+              <div className="email">Full Name</div>
+            </div>
+            <div className="txtemailactive1">
+              <div className="email">Profession</div>
+            </div>
+            <div className="txtemailactive1">
+              <div className="email">Higher Education</div>
+            </div>
+            <div className="txtpassword">
+              <div className="password">
+                <p className="location">Location</p>
+              </div>
+            </div>
+            <div className="txtpassword">
+              <div className="password">Availability</div>
+            </div>
+            <div className="txtemailactive1">
+              <div className="email">Teaching Method</div>
+            </div>
+            <div className="txtemailactive1">
+              <div className="email">Courses</div>
+            </div>
+            <div className="txtemailactive1">
+              <div className="email">Rate per hour (ETB)</div>
+            </div>
+            <div className="forgotpassword">
+              <div className="forgot-your-password">Forgot your password?</div>
+            </div>
+            <div className="btnlogin">
+              <div className="email">Register</div>
+            </div>
+            <div className="btnfacebook">
+              <img
+                className="akar-iconsfacebook-fill"
+                alt=""
+                src="/akariconsfacebookfill.svg" />
+              <b className="log-in1">Log in</b>
+            </div>
+          </div>
+          <div className="footer">
+            <div className="relume">© 2022 Relume</div>
+          </div>
+        </div>
+        <div className="placeholder-image-wrapper">
+          <img
+            className="placeholder-image"
+            alt=""
+            src="/placeholder--image@2x.png" />
+        </div>
+      </div></>
   );
 };
 

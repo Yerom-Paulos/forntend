@@ -23,6 +23,14 @@ const StyledLink = styled(Link)`
   text-decoration: none;
   color: #000000;
   margin: 0 10px;
+  background-color: ${props => (props.active ? "#fa9e0c" : "transparent")};
+  padding: 5px 10px;
+  border-radius: 20px;
+
+  &:hover {
+    background-color: #fa9e0c;
+    color: white;
+  }
 `;
 
 const Title = styled.h1`
@@ -56,11 +64,11 @@ const HomeButton = styled.button`
  }
 `;
 
-const HomeText = styled.p`
+/*const HomeText = styled.p`
  font-size: 16px;
  color: #333;
  line-height: 1.5;
-`;
+`;*/
 
 const TutorContainer = styled.div`
   display: flex;
@@ -90,7 +98,7 @@ function HomePage() {
 
     <PageContainer>
       <NavBar>
-        <StyledLink to="/">Home</StyledLink>
+        <StyledLink to="/" active={true}>Home</StyledLink>
         <StyledLink to="/Tutor">Find Tutor</StyledLink>
         <StyledLink to="/signIn">Sign In</StyledLink>
         <StyledLink to="/form">Become a tutor</StyledLink>
@@ -113,9 +121,12 @@ function HomePage() {
         </ImageContainer>
       </TutorContainer>
 
-
-      <HomeText>When schools and districts have reliable access to teacher 기</HomeText>
       <HomeButton>Subscribe Now</HomeButton>
+
+      <StyledImage
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTO7edP-IO_lpqagfaV_ohuPNsUdVwjjWYCXH6F865lFoA4qQap"
+            alt="Image"
+          />
     </PageContainer>
  );
 }

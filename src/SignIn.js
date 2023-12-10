@@ -1,96 +1,96 @@
 import React from 'react';
-import styled from 'styled-components';
 import { Link } from 'react-router-dom';
+import "./SignIn.css";
+import "./global.css";
 
-const NavBar = styled.nav`
-  background-color: #ffff;
-  color: #f9f8f4;
-  padding: 10px;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  margin-left: 65px;
-  margin-right: 65px;
-  border-radius: 20px;
-`;
-
-const StyledLink = styled(Link)`
-  text-decoration: none;
-  color: #000000;
-  margin: 0 10px;
-`;
-const Form = styled.form`
- display: flex;
- flex-direction: column;
- align-items: center;
- gap: 10px;
- justify-content: center;
- height: 100vh;
-`;
-
-const Input = styled.input`
- padding: 10px;
- border: 1px solid #ccc;
- border-radius: 4px;
- width: 25%;
-`;
-
-const Button = styled.button`
-padding: 10px 20px;
- background-color: #fa9e0c;
- color: white;
- border: none;
- border-radius: 4px;
- cursor: pointer;
- font-size: 16px;
- text-align: center;
- width: 27%;
-`;
-
-const SocialLogin = styled.div`
- display: flex;
- flex-direction: column;
- align-items: center;
- margin-top: 20px;
-`;
-
-const SocialButton = styled.button`
- padding: 10px;
- margin: 5px 0;
- background-color: #f8f9fa;
- color: #007bff;
- border: 1px solid #ccc;
- border-radius: 4px;
- cursor: pointer;
- outline: none;
-`;
-const PageContainer = styled.div`
-  background-color: #f9f8f4;
-`;
 
 const SignIn = () => {
- return (
-  <div>
-<PageContainer>
-<NavBar>
-        <StyledLink to="/">Home</StyledLink>
-        <StyledLink to="/Tutor">Find Tutor</StyledLink>
-        <StyledLink to="/signIn">Sign In</StyledLink>
-        <StyledLink to="/form">Become a tutor</StyledLink>
-      </NavBar>
-    <Form>
-      <h3>Sign In</h3>
-      <Input type="email" placeholder="Email" />
-      <Input type="password" placeholder="Password" />
-      <Button type="submit">Sign In</Button>
-      <SocialLogin>
-        <p>-----or continue with----</p>
-        <SocialButton>Google Sign in</SocialButton>
-      </SocialLogin>
-    </Form>
-    </PageContainer>
+  return (
+    <><div className="navigation-bar">
+    <div className="left">
+      <div className="tutto-ricco-pink-avatar-parent">
+        <img
+          className="tutto-ricco-pink-avatar"
+          alt=""
+          src="/tutto-ricco-pink-avatar@2x.png"
+        />
+        <b className="label">
+          <span>Peer</span>
+          <span className="connect">Connect</span>
+        </b>
+      </div>
+      <Link to="/Tutor" className="label1">Tutors</Link>
+      <Link to="/pricing" className="label1">Pricing</Link>
+      <Link to="/resources" className="label1">Resources</Link>
     </div>
- );
+    <div className="right">
+      <Link to="/signin" className="label1">Sign in</Link>
+      <div className="button">
+          <Link to="/form" className="button">
+            <img className="icon-left" alt="" src="/icon-left.svg" />
+            <div className="action">Become a tutor</div>
+            <img className="icon-left" alt="" src="/icon-right.svg" />
+          </Link>
+      </div>
+    </div>
+  </div>
+    <div className="frm-txtemailactive">
+        <div className="tutto-ricco-pink-avatar-parent">
+          <img
+            className="tutto-ricco-pink-avatar"
+            alt=""
+            src="/tutto-ricco-pink-avatar@2x.png" />
+          <b className="label">
+            <span>{`Peer `}</span>
+            <span className="connect">Connect</span>
+          </b>
+        </div>
+        <div className="form">
+          <div className="title">
+            <div className="log-in-to">Sign in</div>
+          </div>
+          <div className="txtemailactive">
+            <div className="email">Email</div>
+          </div>
+          <div className="txtpassword">
+            <div className="password">
+              <p className="password1">Password</p>
+            </div>
+          </div>
+          <div className="forgotpassword">
+            <div className="forgot-your-password">Forgot your password?</div>
+          </div>
+          <div className="btnlogin">
+            <div className="log-in">Sign in</div>
+          </div>
+          <div className="or">
+            <div className="or-child" />
+            <div className="or-continue-with">or continue with</div>
+            <div className="or-child" />
+          </div>
+          <div className="btngoogle">
+            <img className="frame-icon" alt="" src="/frame.svg" />
+            <div className="log-in1">Sign in with Google</div>
+          </div>
+          <div className="btnfacebook">
+            <img className="frame-icon" alt="" src="/akariconsfacebookfill.svg" />
+            <b className="log-in2">Log in</b>
+          </div>
+        </div>
+        <div className="signuplink">
+          <div className="dont-have-an-container">
+            <span className="dont-have-an-container1">
+              <span className="dont-have-an-account">
+                <span className="connect"></span>
+                <span>Don't have an account?</span>
+              </span>
+              <span className="connect">{` `}</span>
+              <b className="sign-up">{`Sign up `}</b>
+            </span>
+          </div>
+        </div>
+      </div></>
+  );
 };
 
-export default SignIn
+export default SignIn;

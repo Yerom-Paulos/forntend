@@ -1,0 +1,247 @@
+.tutto-ricco-pink-avatar {
+    position: relative;
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+  }
+  .connect {
+    color: var(--color-black);
+  }
+  .label {
+    position: relative;
+  }
+  .tutto-ricco-pink-avatar-parent {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    gap: var(--gap-xl);
+    text-align: left;
+    font-size: 40px;
+  }
+  .log-in-to {
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-weight: 900;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 290px;
+    height: 42px;
+  }
+  .email,
+  .title {
+    position: relative;
+  }
+  .title {
+    width: 290px;
+    height: 42px;
+    font-size: var(--font-size-5xl);
+  }
+  .email {
+    font-weight: 600;
+  }
+  .txtemailactive {
+    border-radius: var(--br-5xs);
+    background-color: var(--grey);
+    border: 3px solid rgba(11, 102, 106, 0.5);
+    box-sizing: border-box;
+    width: 323px;
+    height: 51px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 0 var(--padding-xs);
+    text-align: left;
+    color: var(--color-dimgray-200);
+  }
+  .password1 {
+    margin: 0;
+  }
+  .password {
+    position: relative;
+    font-weight: 600;
+    display: inline-block;
+    width: 65px;
+    height: 12px;
+    flex-shrink: 0;
+  }
+  .txtpassword {
+    border-radius: var(--br-5xs);
+    background-color: var(--grey);
+    width: 317px;
+    height: 45px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: var(--padding-mini) var(--padding-xs);
+    box-sizing: border-box;
+    text-align: left;
+    color: var(--color-dimgray-200);
+  }
+  .forgot-your-password {
+    position: absolute;
+    top: 0;
+    left: 183px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 134px;
+    height: 20px;
+  }
+  .forgotpassword {
+    position: relative;
+    width: 317px;
+    height: 20px;
+    color: var(--color-dimgray-100);
+  }
+  .btnlogin,
+  .log-in {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .log-in {
+    position: relative;
+    font-weight: 600;
+    width: 42px;
+    height: 12px;
+    flex-shrink: 0;
+  }
+  .btnlogin {
+    border-radius: var(--br-5xs);
+    background-color: var(--orange);
+    width: 317px;
+    height: 45px;
+    flex-direction: row;
+    color: var(--grey);
+  }
+  .or-child {
+    position: relative;
+    border-top: 1px solid var(--color-dimgray-100);
+    box-sizing: border-box;
+    width: 86px;
+    height: 1px;
+  }
+  .or,
+  .or-continue-with {
+    display: flex;
+    align-items: center;
+  }
+  .or-continue-with {
+    position: relative;
+    justify-content: center;
+    width: 108px;
+    height: 20px;
+    flex-shrink: 0;
+  }
+  .or {
+    width: 317px;
+    height: 32px;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: var(--padding-3xs) 0;
+    box-sizing: border-box;
+    color: var(--color-dimgray-100);
+  }
+  .frame-icon {
+    position: relative;
+    width: 20px;
+    height: 20px;
+    overflow: hidden;
+    flex-shrink: 0;
+  }
+  .log-in1 {
+    position: relative;
+    font-weight: 500;
+  }
+  .btngoogle {
+    border-radius: var(--br-5xs);
+    background-color: var(--grey);
+    border: 1px solid var(--color-darkslategray-200);
+    box-sizing: border-box;
+    width: 317px;
+    height: 45px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: var(--gap-5xs);
+    text-align: left;
+  }
+  .log-in2 {
+    position: relative;
+    display: inline-block;
+    width: 42px;
+    height: 16px;
+    flex-shrink: 0;
+  }
+  .btnfacebook {
+    border-radius: var(--br-5xs);
+    background-color: var(--grey);
+    border: 1px solid var(--color-darkslategray-200);
+    box-sizing: border-box;
+    width: 317px;
+    height: 45px;
+    display: none;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: var(--gap-5xs);
+    text-align: left;
+  }
+  .form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    gap: var(--gap-xl);
+    color: var(--black);
+  }
+  .dont-have-an-account {
+    font-weight: 600;
+  }
+  .sign-up {
+    color: #307b74;
+  }
+  .dont-have-an-container1 {
+    line-break: anywhere;
+    width: 100%;
+  }
+  .dont-have-an-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    width: 317px;
+    height: 30px;
+  }
+  .signuplink {
+    position: relative;
+    width: 317px;
+    height: 30px;
+    overflow: hidden;
+    flex-shrink: 0;
+    color: var(--color-dimgray-300);
+  }
+  .frm-txtemailactive {
+    position: relative;
+    background-color: var(--background);
+    width: 100%;
+    height: 982px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 100px 543px;
+    box-sizing: border-box;
+    text-align: center;
+    font-size: var(--font-size-xs);
+    color: var(--orange);
+    font-family: var(--font-inter);
+  }
+  
